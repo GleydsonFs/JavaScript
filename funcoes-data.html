@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+
+        var data = new Date()
+
+        //document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+        // Data atual
+        
+        //adicionar ou remover dias 
+        document.write(data.toString()) //ver a data atual
+        data.setDate(data.getDate() + 1) // adicionou um dia 
+        document.write('<hr/>')
+        document.write(data.toString()) //ver a data atual e + 1
+        document.write('<br/>', '<br/>')
+        document.write('<hr/>')
+        
+        
+
+        //adicionar ou remover meses
+        document.write(data.toString()) //ver o mês atual
+        data.setMonth(data.getMonth() + 1) // adicionou um mês
+        document.write('<hr/>')
+        document.write(data.toString())//ver o mês atual e + 1
+        document.write('<br/>', '<br/>')
+        document.write('<hr/>')
+
+        //adicionar ou remover anos
+        document.write(data.toString()) //ver o ano atual
+        data.setFullYear(data.getFullYear() + 1) // adicionou um ano
+        document.write('<hr/>')
+        document.write(data.toString())//ver o ano atual e + 1
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
