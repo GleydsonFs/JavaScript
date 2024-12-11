@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>JavaScript</title>
     <script>
-
+        /*
         var data = new Date()
 
         //document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
@@ -34,6 +34,42 @@
         data.setFullYear(data.getFullYear() + 1) // adicionou um ano
         document.write('<hr/>')
         document.write(data.toString())//ver o ano atual e + 1
+        */
+
+
+        // 15/01/2017
+        var data1 = new Date(2017, 0, 15)
+
+        // 25/02/2017
+        var data2 = new Date(2017, 1, 23)
+
+        document.write(data1.toString())
+        document.write('<hr/>')
+        document.write(data2.toString())
+
+        document.write('<hr/><br/><br/>' )
+
+        // converter datas para algo que possa ser calculado
+        document.write(data1.getTime())
+        document.write('<hr/>')
+        document.write(data2.getTime())
+
+        //1 de janeiro de 1970
+        // encontrar a quantidade de milisegundos entre data1 e data2
+        document.write('<hr/><br/><br/>')
+        var milisegundos_entre_datas = (Math.abs(data1.getTime() - data2.getTime())) // Diferença de milisegundos de um dia para o outro
+        document.write(milisegundos_entre_datas)
+
+        // 1 dias de 24h e cada hr tem 60 segundos / milisegundos sao 1000
+        // quantos milisegundos tem 1 dia?
+
+        var milisegundos_por_dia = (1 * 24 * 60 * 60 * 1000)
+        document.write('1 Dia tem: ' + milisegundos_por_dia + ' milisegundos')
+        document.write('<hr/><br/><br/>')
+        document.write('A diferença entre data1 e data2 é de ' + Math.ceil(milisegundos_entre_datas / milisegundos_por_dia) + ' dia(s)')
+ 
+
+
 
 
 
